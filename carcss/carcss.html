@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carcss.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="formulario">
+        <div class="contenedor">
+            <h2 class="titulo">Registro de Autos</h2>
+        </div>
+        <div class="main-contenedor">
+            <div>
+                <label for="id_coche">ID Vehículo
+                    <input type="number" name="id_coche" id="id_coche" min="0" max="99999999">
+                </label>
+            </div><br>
+            <div>
+                <label for="id_movidoa">Tipo de Combustible
+                    <select name="id_movidoa" id="id_movidoa">
+                        <option value="Co">Corriente</option>
+                        <option value="ACPM">ACPM</option>
+                        <option value="Di">Diesel</option>
+                    </select>
+                </label>
+            </div><br>
+            <div>
+                <label for="id_tipocoche">Tipo de Auto
+                    <select name="id_tipocoche" id="id_tipocoche">
+                        <option value="dep">Deportivo</option>
+                        <option value="tt">Todoterreno</option>
+                        <option value="cc">CityCar</option>
+                        <option value="Sed">Sedán</option>
+                    </select>
+                </label>
+            </div>
+            <div><br>
+                <label for="id_estado">Estado Vehículo
+                    <select name="id_estado" id="id_estado">
+                        <option value="A">Activo</option>
+                        <option value="IA">Inactivo</option>
+                    </select>
+                </label>
+            </div>
+            <div><br>
+                <label for="id_marca">Marca Vehículo
+                    <select name="id_marca" id="id_marca">
+                        <option value="CH">CHEVROLET</option>
+                        <option value="RE">RENAULT</option>
+                        <option value="NI">NISSAN</option>
+                        <option value="MA">MAZDA</option>
+                        <option value="KIA">KIA</option>
+                        <option value="TO">TOYOTA</option>
+                        <option value="VO">VOLKSWAGEN</option>
+                        <option value="FO">FORD</option>
+                        <option value="SU">SUZUKI</option>
+                        <option value="HY">HYUNDAI</option>
+                    </select>
+                </label>
+            </div><br>
+            <div>ID Usuario
+                <label for="id_user">
+                    <input type="number" id="id_user" min="0" max="9999999">
+                </label>
+            </div><br>
+            <div>Modelo
+                <input type="text" name="modelo" maxlength="60">
+            </div><br>
+            <div>Año
+                <input type="text" name="anio" maxlength="4">
+            </div><br>
+            <div>Detalle
+                <input type="text" name="detalle">
+            </div><br>
+            <div>Caja
+                <input type="number" name="caja" min="0" max="9999999">
+            </div><br>
+            <div>Motor
+                <input type="number" name="motor">
+            </div><br>
+            <div>Fecha de Publicación
+                <input type="date" name="fechapub">
+            </div><br>
+            <div>Precio
+                <input type="number" name="precio" min="0">
+            </div><br>
+            <div>Moneda
+                <ul class="checkbox">
+                    <input type="checkbox" name="euro">Euro
+                    <input type="checkbox" name="dolar">Dolar
+                    <input type="checkbox" name="cop">Peso Colombiano
+                </ul>
+            </div><br>
+            <textarea name="cc_pic01" placeholder="Descripción del vehículo"></textarea>
+            <br>
+            <textarea name="cc_pic02" placeholder="Descripción del vehículo"></textarea>
+            <br>
+            <textarea name="cc_pic03" placeholder="Descripción del vehículo"></textarea>
+            <br><br>
+            <div>Destacar
+                <input type="text" name="cc_destac" maxlength="2">
+            </div><br>
+            <input type="submit" name="registro" value="Registro" class="boton">
+        </div>
+        
+    </form>
+</body>
+</html>
