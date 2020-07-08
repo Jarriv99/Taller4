@@ -1,0 +1,16 @@
+.navbar {
+    background: #1289A7;
+    box-shadow: 2px 2px 5px #000;
+    opacity: .9;
+}
+.h2{
+    margin: auto;
+    color: #EA2027;
+}
+body{
+    color: #f1f2f6;
+    background: url(03.jpg);
+}
+.card-body{
+    background: url(03.jpg);   
+}

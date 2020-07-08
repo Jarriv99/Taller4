@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="carboostrap.css">
 </head>
 <body>
-    <nav class="navbar bg-secondary">
-            <h2 class="h2" >REGISTRO DE USUARIO</h2>
+    <nav class="navbar">
+            <h2 class="h2" >REGISTRO DE AUTOS</h2>
     </nav>
     <header class="main-header">
         <form>
@@ -19,33 +19,94 @@
                 <div class="card card-body">
                     <div class="container">
                         <div class="form-group">
-                            <input type="text" class="form-control"  placeholder="Nombres" maxlength="25">
+                            <label for="id_coche">ID Vehículo
+                                <input type="number" name="id_coche" id="id_coche" min="0" max="99999999">
+                            </label>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control"  placeholder="Apellidos" maxlength="25">
+                            <label for="id_movidoa">Tipo de Combustible
+                                <select name="id_movidoa" id="id_movidoa">
+                                    <option value="Co">Corriente</option>
+                                    <option value="ACPM">ACPM</option>
+                                    <option value="Di">Diesel</option>
+                                </select>
+                            </label>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control"  placeholder="Dirección" maxlength="45">
+                            <label for="id_tipocoche">Tipo de Auto
+                                <select name="id_tipocoche" id="id_tipocoche">
+                                    <option value="dep">Deportivo</option>
+                                    <option value="tt">Todoterreno</option>
+                                    <option value="cc">CityCar</option>
+                                    <option value="Sed">Sedán</option>
+                                </select>
+                            </label>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control"  placeholder="Nombre de Usuario" maxlength="20">
+                            <label for="id_estado">Estado Vehículo
+                                <select name="id_estado" id="id_estado">
+                                    <option value="A">Activo</option>
+                                    <option value="IA">Inactivo</option>
+                                </select>
+                            </label>
                         </div>
                         <div class="form-group">
-                            <select class="form-control" id="id_pais">
-                                
-                            </select>
+                            <label for="id_marca">Marca Vehículo
+                                <select name="id_marca" id="id_marca">
+                                    <option value="CH">CHEVROLET</option>
+                                    <option value="RE">RENAULT</option>
+                                    <option value="NI">NISSAN</option>
+                                    <option value="MA">MAZDA</option>
+                                    <option value="KIA">KIA</option>
+                                    <option value="TO">TOYOTA</option>
+                                    <option value="VO">VOLKSWAGEN</option>
+                                    <option value="FO">FORD</option>
+                                    <option value="SU">SUZUKI</option>
+                                    <option value="HY">HYUNDAI</option>
+                                </select>
+                            </label>
                         </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control"  placeholder="E-mail" maxlength="120">
+                        <div class="form-group">ID Usuario
+                            <label for="id_user">
+                                <input type="number" id="id_user" min="0" max="9999999">
+                            </label>
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control"  placeholder="Telefono" maxlength="20">
+                        <div class="form-group">Modelo
+                            <input type="text" name="modelo" maxlength="60">
                         </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control"  placeholder="Contraseña" maxlength="15">
+                        <div class="form-group">Año
+                            <input type="text" name="anio" maxlength="4">
+                        </div> 
+                        <div class="form-group">Detalle
+                            <input type="text" name="detalle">
+                        </div> 
+                        <div class="form-group">Caja
+                            <input type="number" name="caja" min="0" max="9999999">
+                        </div> 
+                        <div class="form-group">Motor
+                            <input type="number" name="motor">
+                        </div> 
+                        <div class="form-group">Fecha Publicación
+                            <input type="date" name="fechapub">
+                        </div> 
+                        <div class="form-group">Precio
+                            <input type="number" name="precio" min="0">
+                        </div> 
+                        <div class="form-group">Moneda
+                            <ul class="checkbox">
+                                <input type="checkbox" name="euro">Euro
+                                <input type="checkbox" name="dolar">Dolar
+                                <input type="checkbox" name="cop">Peso Colombiano
+                            </ul>
+                        </div> 
+                        <textarea class="form-group" name="cc_pic01" placeholder="Descripción del vehículo"></textarea>
+                        <textarea class="form-group" name="cc_pic02" placeholder="Descripción del vehículo"></textarea>
+                        <textarea class="form-group" name="cc_pic03" placeholder="Descripción del vehículo"></textarea>
+                        <div class="form-group">Destacar
+                            <input type="text" name="cc_destac" maxlength="2">
                         </div> 
                     </div>
-                    <button type="button" class="btn btn-dark">Registrarse</button>
+                    <button type="button" class="btn btn-primary">Registrarse</button>
                 </div>
             </div>
         </form>
