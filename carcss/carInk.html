@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="http://fastly.ink.sapo.pt/x.x.x/">
+    <link rel="stylesheet" type="text/css" href="http://fastly.ink.sapo.pt/3.1.10/css/ink.css">
+    <script type="text/javascript" src="http://fastly.ink.sapo.pt/3.1.10/js/ink-all.js"></script>
+    <link rel="stylesheet" href="http://cdn.ink.sapo.pt/3.1.10/css/ink-flex.css">
+    <link rel="stylesheet" type="text/css" href="https://ink.global.ssl.fastly.net/x.x.x/">
+    <title>Registro de Autos</title>
+</head>
+<body>
+    <nav class="ink-navigation">
+        <ul class="menu horizontal orange ">
+            <div class="ink-flex">
+                <div class="push-center">
+                    <li><a>REGISTRO DE AUTOS</a></li>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    <br>
+    <div class="ink-grid">
+      <form class="ink-form">
+            <div class="column-group push-center push-middle">
+                <div class="column-group vertical small">
+                    <div class="all-100">
+                      <div class="column-group horizontal-gutters">
+                        <div class="control-group all-33">
+                            <label for="id_coche">ID Vehículo</label>
+                            <div class="control">
+                                <input type="number" name="id_coche" id="id_coche" min="0" max="99999999">
+                            </div>
+                        </div>
+                        <div class="all-100">
+                            <div class="column-group">
+                              <div class="control-group all-65">
+                                <label for="id_movidoa">Tipo de Combustible</label>
+                                <div class="control">
+                                    <select name="id_movidoa" id="id_movidoa">
+                                        <option value="Co">Corriente</option>
+                                        <option value="ACPM">ACPM</option>
+                                        <option value="Di">Diesel</option>
+                                    </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="all-100">
+                        <div class="column-group">
+                          <div class="control-group all-65">
+                              <label for="id_tipocoche">Tipo de Auto</label>
+                              <div class="control">
+                                <select name="id_tipocoche" id="id_tipocoche">
+                                    <option value="dep">Deportivo</option>
+                                    <option value="tt">Todoterreno</option>
+                                    <option value="cc">CityCar</option>
+                                    <option value="Sed">Sedán</option>
+                                </select>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="all-100">
+                      <div class="column-group">
+                        <div class="control-group all-65">
+                            <label for="id_estado">Estado Vehículo</label>
+                            <div class="control">
+                                <select name="id_estado" id="id_estado">
+                                    <option value="A">Activo</option>
+                                    <option value="IA">Inactivo</option>
+                                </select>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="all-100">
+                      <div class="column">
+                        <div class="column-group">
+                            <div class="control-group all-65">
+                                <label for="id_marca">Marca Vehículo</label>
+                                <div class="control">
+                                    <select name="id_marca" id="id_marca">
+                                        <option value="CH">CHEVROLET</option>
+                                        <option value="RE">RENAULT</option>
+                                        <option value="NI">NISSAN</option>
+                                        <option value="MA">MAZDA</option>
+                                        <option value="KIA">KIA</option>
+                                        <option value="TO">TOYOTA</option>
+                                        <option value="VO">VOLKSWAGEN</option>
+                                        <option value="FO">FORD</option>
+                                        <option value="SU">SUZUKI</option>
+                                        <option value="HY">HYUNDAI</option>
+                                    </select>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="all-100">
+                        <div class="column">
+                          <div class="column-group">
+                              <div class="control-group all-65">
+                                  <label for="id_user">ID Usuario</label>
+                                  <div class="control">
+                                    <input type="number" id="id_user" min="0" max="9999999">
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="all-100">
+                        <div class="column">
+                          <div class="column-group">
+                              <div class="control-group all-65">
+                                  <label for="modelo">Modelo</label>
+                                  <div class="control">
+                                    <input type="text" name="modelo" maxlength="60">
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    <div class="all-100">
+                        <div class="column">
+                          <div class="column-group">
+                              <div class="control-group all-65">
+                                  <label for="año">Año</label>
+                                  <div class="control">
+                                    <input type="text" name="anio" maxlength="4">
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all-100">
+                        <div class="column">
+                          <div class="column-group">
+                              <div class="control-group all-65">
+                                  <label for="detalle">Detalle</label>
+                                  <div class="control">
+                                    <input type="text" name="detalle">
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all-100">
+                        <div class="column">
+                          <div class="column-group">
+                              <div class="control-group all-65">
+                                  <label for="caja">Caja</label>
+                                  <div class="control">
+                                    <input type="number" name="caja" min="0" max="9999999">
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all-100">
+                        <div class="column">
+                          <div class="column-group">
+                              <div class="control-group all-65">
+                                  <label for="motor">Motor</label>
+                                  <div class="control">
+                                    <input type="number" name="motor">
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all-100">
+                        <div class="column">
+                          <div class="column-group">
+                              <div class="control-group all-65">
+                                  <label for="fechapub">Fecha de Publicación</label>
+                                  <div class="control">
+                                    <input type="date" name="fechapub">
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all-100">
+                        <div class="column">
+                          <div class="column-group">
+                              <div class="control-group all-65">
+                                  <label for="precio">Precio</label>
+                                  <div class="control">
+                                    <input type="number" name="precio" min="0">
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all-100">
+                        <div class="column">
+                          <div class="column-group">
+                              <div class="control-group all-65">
+                                Moneda
+                                  <div class="control">
+                                    <fieldset>
+                                      <div class="control-group">
+                                          <ul class="control unstyled">
+                                              <li><input type="checkbox" name="euro"><label for="cb5">Euro</label></li>
+                                              <li><input type="checkbox" name="dolar"><label for="cb4">Dolar</label></li>
+                                              <li><input type="checkbox" name="cop"><label for="cb3">Peso Colombiano</label></li>
+                                          </ul>
+                                      </div>
+                                  </fieldset>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="all-100">
+                        <div class="column">
+                          <div class="column-group">
+                              <div class="control-group all-65">
+                                  <div class="control">
+                                    <textarea name="cc_pic01" placeholder="Descripción del vehículo"></textarea>
+                                    <textarea name="cc_pic02" placeholder="Descripción del vehículo"></textarea>
+                                    <textarea name="cc_pic03" placeholder="Descripción del vehículo"></textarea>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all-100">
+                      <div class="column">
+                        <div class="column-group">
+                            <div class="control-group all-65">
+                                <label for="cc_destac">Destacado</label>
+                                <div class="control">
+                                  <input type="text" name="cc_destac" maxlength="2">
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                   </div>
+                   <div class="all-100">
+                    <div class="column">
+                      <div class="column-group">
+                          <div class="control-group all-65">
+                              <div class="control">
+                                <button class="ink-button orange extralarge">Registrarse</button>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                   </div>
+                </div>
+             </div>
+      </form>
+    </div>
+</body>
+</html>
